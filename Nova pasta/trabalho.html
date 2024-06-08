@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GusFlix</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col-auto">
+                <div class="logo">
+                    <a href="trabalho.html">
+                        <img src="imagens/5084188.png" alt="Logo do Site">
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="col">
+                <a href="#"><i class="bi bi-house-door"></i>Início</a>
+            </div>
+            <div class="col">
+                <a href="#"><i class="bi bi-film"></i>Filmes</a>
+            </div>
+            <div class="col">
+                <a href="#"><i class="bi bi-tv"></i>Mais vistos da semana</a>
+            </div>
+            <div class="col">
+                <a href="#"><i class="bi bi-collection-play-fill"></i>Séries</a>
+            </div>
+            <div class="col">
+                <a href="#"><i class="bi bi-lightning"></i>Novidades</a>
+            </div>
+        </div>
+        <a href="#" class="btn btn-outline-primary ml-2" onclick="showLoginForm()">Login</a>
+        <a href="#" class="btn btn-primary ml-2" onclick="showCadastroForm()">Cadastro</a>
+    </div>
+</header>
+
+<main>
+    <section class="introducao">
+        <h1>Bem-vind@ ao Guflix! Seu melhor site de Streaming!</h1>
+        <p class="destaque">Tenha o cinema nas suas mãos.</p>
+    </section>
+
+    <section class="multimidia">
+        <h2>Destaques</h2>
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="img-container">
+                        <img src="imagens/aique.jpg" class="d-block w-100" alt="Aique">
+                        <a href="#" class="btn btn-primary btn-watch">Assistir agora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-container">
+                        <img src="imagens/auto_da.jpg" class="d-block w-100" alt="Auto da">
+                        <a href="#" class="btn btn-primary btn-watch">Assistir agora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-container">
+                        <img src="imagens/canico.jpg" class="d-block w-100" alt="Canico">
+                        <a href="#" class="btn btn-primary btn-watch">Assistir agora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-container">
+                        <img src="imagens/Central_do.jpg" class="d-block w-100" alt="Central do">
+                        <a href="#" class="btn btn-primary btn-watch">Assistir agora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-container">
+                        <img src="imagens/lisbela.jpg" class="d-block w-100" alt="Lisbela">
+                        <a href="#" class="btn btn-primary btn-watch">Assistir agora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-container">
+                        <img src="imagens/ranger.jpg" class="d-block w-100" alt="Ranger">
+                        <a href="#" class="btn btn-primary btn-watch">Assistir agora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-container">
+                        <img src="imagens/scoo.jpg" class="d-block w-100" alt="Scoo">
+                        <a href="#" class="btn btn-primary btn-watch">Assistir agora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-container">
+                        <img src="imagens/scoo2.jpg" class="d-block w-100" alt="Scoo 2">
+                        <a href="#" class="btn btn-primary btn-watch">Assistir agora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-container">
+                        <img src="imagens/zombies.jpg" class="d-block w-100" alt="Zombies">
+                        <a href="#" class="btn btn-primary btn-watch">Assistir agora</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="catalogo-series text-center">
+        <h2>Catálogo de Séries</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="container-sm">
+                    <img src="imagens/aventserie.jpg" alt="AventSerie">
+                    <h3>Hora de Aventura</h3>
+                    <p>A série segue as aventuras de Finn, o Humano e o seu melhor amigo e irmão adotivo Jake, o Cão; que se aventuram na Terra de Ooo, num futuro pós-apocalíptico por volta de mil anos após a "Grande Guerra dos Cogumelos", sendo Finn presumidamente o último humano existente.</p>
+                    <a href="#" class="btn btn-primary">Assistir agora</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="container-md">
+                    <img src="imagens/buffyserie.jpg" alt="BuffySerie">
+                    <h3>Buffy, a Caça-Vampiros</h3>
+                    <p>Ela é uma Caça-Vampiros, uma das escolhidas para lutar contra o mal e proteger o mundo de monstros. Com os amigos Willow (Alyson Hannigan) e Xander (Nicholas Brendon), e seu Guardião Giles (Anthony Head), ela vai enfrentar os perigos dos vampiros e demônios enquanto tenta sobreviver ao Ensino Médio.</p>
+                    <a href="#" class="btn btn-primary">Assistir agora</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="container-lg">
+                    <img src="imagens/cupserie.jpg" alt="CupSerie">
+                    <h3>The Cuphead Show! </h3>
+                    <p>Uma animação de comédia baseada nos personagens e no mundo do videogame Cuphead. Com um estilo inspirado nos desenhos de Fleischer da década de 1930, acompanhamos as incríveis desventuras do impulsivo Xicrinho e seu cauteloso mas influenciável irmão Caneco em sua terra natal, as Ilhas de Inkwell.</p>
+                    <a href="#" class="btn btn-primary">Assistir agora</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="container-xl">
+                    <img src="imagens/gardenserie.jpg" alt="GardenSerie">
+                    <h3>Over the Garden Wall</h3>
+                    <p>A série conta o caminho de dois irmãos que viajam através de uma estranha floresta para encontrar o caminho de volta para casa. A série veio a partir do curta-metragem de animação, Tome of the Unknown de McHale, que contava com os mesmos personagens, produzida no Cartoon Network Studios.</p>
+                    <a href="#" class="btn btn-primary">Assistir agora</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="container-xxl">
+                    <img src="imagens/gotserie.jpg" alt="GotSerie">
+                    <h3>Game of Thrones</h3>
+                    <p>O foco central de GoT acomapanha o jogo político em Westeros, o continente de um mundo fantástico onde há regiões governadas por Casas nobres. Há sete reinos que estão sob a liderança do rei ocupante do Trono de Ferro, uma posição alta e desejada entre boa parte das famílias.</p>
+                    <a href="#" class="btn btn-primary">Assistir agora</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="container-sm">
+                    <img src="imagens/noritmoserie.jpg" alt="NoritmoSerie">
+                    <h3>No Ritmo</h3>
+                    <p>No Ritmo se passa em Chicago e conta a história de duas amigas: Rocky (Zendaya Coleman) e Cece (Bella Thorne), que, com a ajuda do amigo Deuce (Adam Irigoyen), conseguem trabalhar como dançarinas no programa de TV No Ritmo de Chicago.</p>
+                    <a href="#" class="btn btn-primary">Assistir agora</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="container-md">
+                    <img src="imagens/powerspacserie.jpg" alt="PowerSpacSerie">
+                    <h3>Power Rangers in Space</h3>
+                    <p>Os Rangers Espaciais, cuja missão é derrotar as forças de Espectro Negro e salvar o Universo conhecido, enfrentando diversas batalhas e surpreendentes revelações no caminho.</p>
+                    <a href="#" class="btn btn-primary">Assistir agora</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="container-lg">
+                    <img src="imagens/saserie.jpg" alt="SaSerie">
+                    <h3>Scooby-Doo! Mystery Incorporated</h3>
+                    <p>Seguindo pistas enigmáticas mandadas por um homem conhecido como Sr. E, os adolescentes descobrem a lenda de um amaldiçoado tesouro, a história secreta da fundação de Baía Cristal e o desaparecimento sem solução de quatro jovens e seu animal de estimação que formavam a Mistério S/A original.</p>
+                    <a href="#" class="btn btn-primary">Assistir agora</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="container-xl">
+                    <img src="imagens/turboserie.jpg" alt="TurboSerie">
+                    <h3>Power Rangers Turbo</h3>
+                    <p>Após a derrota do Malagore, os Rangers se formaram no ensino médio e se preparam para retomar sua vida normal, mas são atacados por uma vingativa Divatox. Logo depois, Zordon e Alpha 5 que ficaram desde a primeira temporada, retornam ao planeta natal, Eltar.</p>
+                    <a href="#" class="btn btn-primary">Assistir agora</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="container-xxl">
+                    <img src="imagens/wizardsserie.jpg" alt="WizardsSerie">
+                    <h3>Os Feiticeiros de Waverly Place</h3>
+                    <p>Os Feiticeiros de Waverly Place" conta a história dos Russos, uma típica família americana que inclui a mãe Theresa, o pai Jerry, os filhos Justin e Max, e a filha, Alex. As crianças e a família levam uma vida normal, mas o que seus vizinhos e amigos não sabem é que eles podem fazer mágica</p>
+                    <a href="#" class="btn btn-primary">Assistir agora</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="container-sm">
+                    <img src="imagens/spiesserie.jpg" alt="SpiesSerie">
+                    <h3>Totally Spies!</h3>
+                    <p>Sam, Clover e Alex são três jovens comuns de Beverly Hills que passam a ser agentes da WOOHP (Organização Mundial de Proteção Humana), uma agência de espionagem. Líderadas por Jerry, o presidente da companhia que destina missões as garotas, as três melhores amigas lutam contra os mais perigosos criminosos, enquanto tentam lidar com os dramas de toda adolescente.</p>
+                    <a href="#" class="btn btn-primary">Assistir agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sugestao-do-dia">
+        <h2>Sugestão do Dia</h2>
+        <div class="row">
+            <div class="col-md-6">
+                
+                <div class="video-container">
+                    <video width="100%" controls>
+                        <source src="C:\Users\thyag\OneDrive\Área de Trabalho\Nova pasta\Imagens\trailer_deadboy.mp4" type="video/mp4">
+                        
+                    </video>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Garotos Detetives Mortos</h3>
+                <p>Baseada na famosa HQ de Neil Gaiman, a série Garotos Detetives Mortos acompanha Edwin Payne (George Rexstrew) e Charles Rowland (Jayden Revri), uma dupla que se conheceu apenas após a morte, sendo "o cérebro" e "o músculo" por trás da Agência dos Garotos Detetives Mortos.</p>
+                <a href="#" class="btn btn-primary">Assistir agora</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <!-- Rodapé -->
+    <div class="contato">
+        <p>Fale conosco:</p>
+        <form>
+            <div class="form-group">
+                <input type="email" class="form-control" id="contatoEmail" placeholder="Seu e-mail">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="contatoDescricao" rows="3" placeholder="Descrição"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        </form>
+        <p id="successMessage" style="display: none;">Mensagem enviada com sucesso!</p>
+    </div>
+    </div>
+    <div class="contato">
+        <p>Fale com a gente!</p>
+        <ul>
+            <li>Email: contato@guflix.com</li>
+            <li>Telefone: (81) 4002-8922</li>
+        </ul>
+    </div>
+    <div class="redes-sociais">
+        <!-- Adicione links para redes sociais -->
+    </div>
+    <div class="copyright">
+        <p>Aluno: Gustavo Melo Lopes | Matrícula: 202211624828</p>
+    </div>
+</footer>
+
+<!-- Modal de Login -->
+<div class="modal" id="loginModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" placeholder="Seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Senha</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Sua senha">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Cadastro -->
+<div class="modal" id="cadastroModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cadastro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="cadastroEmail">Email</label>
+                        <input type="email" class="form-control" id="cadastroEmail" placeholder="Seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="cadastroNome">Nome</label>
+                        <input type="text" class="form-control" id="cadastroNome" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="cadastroLogin">Login</label>
+                        <input type="text" class="form-control" id="cadastroLogin" placeholder="Seu login">
+                    </div>
+                    <div class="form-group">
+                        <label for="cadastroSenha">Senha</label>
+                        <input type="password" class="form-control" id="cadastroSenha" placeholder="Sua senha">
+                    </div>
+                    <div class="form-group">
+                        <label for="cadastroConfirmaSenha">Confirme a Senha</label>
+                        <input type="password" class="form-control" id="cadastroConfirmaSenha" placeholder="Confirme sua senha">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<img src="C:\Users\thyag\OneDrive\Área de Trabalho\Nova pasta\Imagens\garnet_.gif" alt="Gif" class="gif-corner">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function showLoginForm() {
+        $('#loginModal').modal('show');
+    }
+
+    function showCadastroForm() {
+        $('#cadastroModal').modal('show');
+    }
+
+    $(document).ready(function() {
+        $('.img-container').hover(
+            function() {
+                $('#carouselExample').carousel('pause');
+            },
+            function() {
+                $('#carouselExample').carousel('cycle');
+            }
+        );
+
+        $('#contactForm').submit(function(event) {
+            event.preventDefault();
+            $('#successMessage').fadeIn().delay(3000).fadeOut();
+        });
+    });
+</script>
+</body>
+</html>

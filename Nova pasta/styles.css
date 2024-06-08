@@ -1,0 +1,203 @@
+/* Variáveis */
+:root {
+    --primary-color: #191970;
+    --secondary-color: #E6E6FA;
+    --text-color: #836FFF;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: #A020F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: FreeMono, monospace;
+    font-weight: bold;
+}
+
+header .col {
+    display: flex;
+    align-items: center; 
+}
+
+.logo img {
+    max-width: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a i {
+    margin-right: 5px; 
+}
+
+
+main {
+    padding: 20px;
+    font-family: 'Luminari', fantasy;
+    font-style: italic;
+    background-color: #F8F8FF;
+}
+
+.introducao {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.destaque {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.multimidia {
+    padding: 20px;
+    text-align: center;
+    max-width: 30%; 
+    margin: 0 auto; 
+}
+
+.carousel-item .img-container {
+    position: relative;
+    overflow: hidden;
+    text-align: center; 
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-item .btn-watch {
+    display: none;
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel-item:hover .btn-watch {
+    display: block;
+}
+
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    color: var(--text-color);
+    text-align: center;
+    font-family: OCR A Std, monospace;
+    font-weight: bold;
+}
+
+.redes-sociais a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+.catalogo-series img {
+    max-width: 100%; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+}
+
+.catalogo-series h3 {
+    font-size: 18px; 
+    margin-top: 10px; 
+}
+
+.catalogo-series p {
+    margin-bottom: 10px; 
+}
+
+.catalogo-series .btn {
+    margin-top: 10px; 
+}
+
+
+.sugestao-do-dia {
+    padding: 20px;
+}
+
+.sugestao-do-dia h2 {
+    text-align: center;
+}
+
+.sugestao-do-dia iframe {
+    width: 100%;
+}
+
+.sugestao-do-dia h3,
+.sugestao-do-dia p {
+    margin-top: 20px;
+}
+
+.gif-corner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px; 
+    height: auto;
+}
+
+/* Estilos globais */
+body {
+    font-family: 'OCR A Std', monospace;
+    margin: 10px; 
+}
+
+
+.input-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.input-group input.form-control {
+    width: 100%; 
+}
+
+.input-group .btn {
+    
+}
+
+.header-search-btn {
+    margin-left: 10px; 
+}
+
+
+header .col:nth-child(3),
+header .col:nth-child(4),
+header .col:nth-child(5),
+header .col:nth-child(6),
+header .col:nth-child(7) {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+header .col a {
+    color: #DDA0DD; 
+}
+
+.header-search-btn {
+    margin-left: 10px; 
+}
